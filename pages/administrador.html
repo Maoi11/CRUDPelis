@@ -223,6 +223,7 @@
                   placeholder="Ej: En 1999 una nave de origen extraterrestre se estrella en una isla del Pacífico Sur llamada Macross."
                   maxlength="200"
                   minlength="2"
+                  required
                 ></textarea>
               </div>
               <div class="mb-3">
@@ -239,16 +240,18 @@
                   placeholder="Ej: http://127.0.0.1:5500/pages/macross.png"
                   maxlength="120"
                   minlength="2"
+                  required
                 />
               </div>
               <div class="mb-3">
                 <label for="genero">Genero *</label>
-                <select id="genero" class="form-control">
+                <select id="genero" class="form-control" required>
                   <option value="">Selecione una opcion</option>
                   <option value="accion">Accion</option>
                   <option value="drama">Drama</option>
                   <option value="comedia">Comedia</option>
                   <option value="aventura">Aventura</option>
+                  
                 </select>
               </div>
               <div class="mb-3">
@@ -271,11 +274,11 @@
                 >
                 <input
                   id="duracion"
-                  type="text"
+                  type="number"
                   class="form-control"
-                  placeholder="Ej: 93 min"
+                  placeholder="Ej: 93"
                   maxlength="3"
-                  minlength="2"
+                  minlength="1"
                 />
               </div>
               <div class="mb-3">
@@ -302,7 +305,7 @@
                 minlength="2"
               />
             </div>  
-            </div>
+            
               <div class="mb-3">
                 <label for="reparto"
                   >Reparto<small class="text-secondary">
@@ -328,6 +331,7 @@
               </button>
             </form>
           </div>
+        </div>
         </div>
       </div>
     </div>
