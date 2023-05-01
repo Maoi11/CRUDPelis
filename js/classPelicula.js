@@ -112,4 +112,22 @@ export default class Pelicula {
     set reparto(reparto) {
       this.#reparto = reparto;
     }
+// para que JSON pueda usar stringify (por las propiedades privadas). tengo que usar los getters
+    toJSON(){
+        return {
+            codigo: this.codigo,
+            titulo: this.titulo,
+            descripcion: this.descripcion,
+            imagen: this.imagen,
+            anio: this.anio,
+            genero: this.genero,
+            duracion: this.duracion,
+            pais: this.pais,
+            director: this.director,
+            reparto: this.reparto
+
+
+        }
+
+    }
   }
