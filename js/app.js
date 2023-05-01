@@ -16,4 +16,5 @@ function cambiarTema(color) {
     document.querySelector('body').setAttribute('data-bs-theme', color);
     localStorage.setItem('tema', JSON.stringify(color));
     
+    
 }
