@@ -21,7 +21,7 @@ export default class Pelicula {
       director,
       reparto
     ) {
-      this.#codigo = 0;
+      this.#codigo = uuidv4();
       this.#titulo = titulo;
       this.#descripcion = descripcion;
       this.#imagen = imagen;
