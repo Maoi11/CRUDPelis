@@ -90,8 +90,6 @@
         <button
           class="btn btn-outline-primary btn-sm ms-3"
           id="btnCrearPelicula"
-          data-bs-target="#modalPelicula"
-          data-bs-toggle="modal"
         >
           <i class="bi bi-clipboard2-plus-fill"></i>
         </button>
@@ -180,9 +178,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">
-              Administrar Pelicula
-            </h5>
+            <h5 class="modal-title">Administrar Pelicula</h5>
             <button
               type="button"
               class="btn-close"
@@ -251,7 +247,6 @@
                   <option value="drama">Drama</option>
                   <option value="comedia">Comedia</option>
                   <option value="aventura">Aventura</option>
-                  
                 </select>
               </div>
               <div class="mb-3">
@@ -291,21 +286,19 @@
                   maxlength="20"
                   minlength="2"
                 />
-            </div>
-            <div class="mb-3">
-              <label for="director"
-                >Director</label
-              >
-              <input
-                id="director"
-                type="text"
-                class="form-control"
-                placeholder="Ej: Wes Anderson"
-                maxlength="100"
-                minlength="2"
-              />
-            </div>  
-            
+              </div>
+              <div class="mb-3">
+                <label for="director">Director</label>
+                <input
+                  id="director"
+                  type="text"
+                  class="form-control"
+                  placeholder="Ej: Wes Anderson"
+                  maxlength="100"
+                  minlength="2"
+                />
+              </div>
+
               <div class="mb-3">
                 <label for="reparto"
                   >Reparto<small class="text-secondary">
@@ -332,9 +325,9 @@
             </form>
           </div>
         </div>
-        </div>
       </div>
     </div>
+
     <footer class="bg-dark text-light text-center py-3">
       <p>&copy; Todos los derechos reservados</p>
     </footer>
