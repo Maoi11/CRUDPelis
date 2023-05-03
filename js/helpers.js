@@ -53,8 +53,14 @@ function validarGenero(genero) {
   }
 }
 
-
-function validarReparto(reparto) {}
+// function validarReparto(reparto) {
+//   if (reparto.length > 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+//NO PUEDO USAR VALIDACION DE REPARTO PORQUE NO ES OBLIGATORIO. PENSAR COMO MAS VALIDARLO. 
 
 export function sumarioValidacion(
   titulo,
@@ -64,7 +70,7 @@ export function sumarioValidacion(
   anio,
   genero,
   pais,
-  director
+  director,
 ) {
   let resumen = "";
   if (!validarCantidadCaracteres(titulo, 2, 100)) {
@@ -90,11 +96,12 @@ export function sumarioValidacion(
     resumen +=
       "Los generos permitidos en este CRUD son: accion, drama, comedia o aventura. Seleccione uno de ellos para continuar. <br>";
   }
-  if (!validarCantidadCaracteres(pais,3,50)){
-    resumen += 'El Pais debe tener entre 3 y 50 caracteres. <br>';
+  if (!validarCantidadCaracteres(pais, 3, 50)) {
+    resumen += "El Pais debe tener entre 3 y 50 caracteres. <br>";
   }
-if (!validarCantidadCaracteres(director,3,100)){
-    resumen += 'El director debe tener entre 3 y 100 caracteres. <br>'
-}
+  if (!validarCantidadCaracteres(director, 3, 100)) {
+    resumen += "El director debe tener entre 3 y 100 caracteres. <br>";
+  }
+ 
   return resumen;
 }
