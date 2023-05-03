@@ -24,7 +24,7 @@ function prepararFormulario(e) {
 
 function crearPelicula() {
   // validar datos del formulario
-  let resumen = sumarioValidacion(titulo.value, descripcion.value, duracion.value);
+  let resumen = sumarioValidacion(titulo.value, descripcion.value, duracion.value, imagen.value, anio.value, genero.value, pais.value, director.value);
   if (resumen.length === 0) {
     // los datos son validos
     //crear pelicula
@@ -46,6 +46,7 @@ function crearPelicula() {
     // almaceno el array en localStorage
     localStorage.setItem("listaDePeliculas", JSON.stringify(listaDePeliculas));
     // cierro el modal del form
+
   } else {
     // los datos no son validos -> mostrar alert
     let alertError = document.getElementById("alerta");
